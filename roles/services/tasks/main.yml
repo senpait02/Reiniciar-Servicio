@@ -1,0 +1,8 @@
+---
+- name: Reiniciar el rsyslog
+  import_tasks: reiniciar_rsyslog.yml
+  when: '{{ action }}' == 'restart'
+
+- name: Parar el rsyslog
+  import_tasks: stop_rsyslog.yml
+  when: '{{ action }}' == 'stop' 

@@ -1,0 +1,5 @@
+---
+- name: Parar el rsyslog
+  service:
+    name: rsyslog
+    state: stopped

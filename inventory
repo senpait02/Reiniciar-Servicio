@@ -1,0 +1,12 @@
+[web]
+nodo01
+
+[dba]
+nodo02
+nodo03
+
+[dev]
+nodo04
+
+[prod]
+nodo05

@@ -1,0 +1,12 @@
+---
+- name: Pasar el all al etc
+  hosts: all
+  tasks:
+  - name: Copiar al etc/content
+    copy:
+      dest: /etc/sudoers.d/devops
+      content: "devops ALL=(ALL) NOPASSWD: ALL "
+      
+    
+                
+
